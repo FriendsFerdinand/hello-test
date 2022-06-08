@@ -1,0 +1,28 @@
+{
+  "name": "hello-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "cd onchain/hello && jest",
+    "build": "rimraf ./build && tsc",
+    "start": "npm run build && node build/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@hirosystems/stacks-devnet-js": "^0.31.1",
+    "@stacks/network": "^4.2.1",
+    "@types/jest": "^28.1.1",
+    "@types/node": "^17.0.41",
+    "jest": "^28.1.1",
+    "rimraf": "^3.0.2",
+    "ts-jest": "^28.0.4",
+    "ts-node": "^10.8.1",
+    "typescript": "^4.7.3"
+  },
+  "dependencies": {
+    "@stacks/transactions": "^4.2.1"
+  }
+}

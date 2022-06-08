@@ -1,0 +1,24 @@
+[project]
+name = "hello-test"
+authors = []
+description = ""
+telemetry = true
+cache_dir = "/Users/fernandofoy/.clarinet/cache"
+boot_contracts = ["pox", "costs-v2", "bns"]
+
+[contracts.test-this]
+path = "contracts/test-this.clar"
+depends_on = []
+
+[repl]
+costs_version = 2
+parser_version = 2
+
+[repl.analysis]
+passes = ["check_checker"]
+
+[repl.analysis.check_checker]
+strict = false
+trusted_sender = false
+trusted_caller = false
+callee_filter = false
